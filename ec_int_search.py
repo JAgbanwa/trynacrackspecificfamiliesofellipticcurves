@@ -3,7 +3,7 @@ Integer point search for the EC family
   v^2 = X^3 + A(n)*X + B(n)
   A(n) = -45349632*n^4 + 419904*n^3
   B(n) = 3*(39182082048*n^6 - 544195584*n^5 + 1259712*n^4 - 19*n)
-  forbidden: X = -3888*n^2
+  forbidden: X != 0
 
 Strategy: for each n, scan integer X in [-10^6, 10^6] and
 check if RHS is a perfect square.
@@ -13,7 +13,7 @@ from math import isqrt
 def a4(n): return -45349632*n**4 + 419904*n**3
 def a6(n): return 3*(39182082048*n**6 - 544195584*n**5 + 1259712*n**4 - 19*n)
 def rhs(X, n): return X**3 + a4(n)*X + a6(n)
-def forb(n): return -3888*n**2
+def forb(n): return 0  # forbidden: X != 0
 
 results = []
 

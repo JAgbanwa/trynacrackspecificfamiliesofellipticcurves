@@ -51,6 +51,8 @@ $$A(n) = -45349632n^4 + 419904n^3 = 419904n^3(1 - 108n)$$
 
 $$B(n) = 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$$
 
+At $X = 0$ the curve equation reduces to $v^2 = B(n) = 3n(39182082048n^5 - 544195584n^4 + 1259712n^3 - 19)$, which is excluded by the constraint $X \neq 0$.  For $n = 1,\ldots,10$ this value is not a perfect square (verified by direct computation), so the constraint is again vacuous for these $n$.
+
 ### Computational results (18 March 2026)
 
 **Tools used:** SageMath (`EllipticCurve.rank(proof=False)`, torsion subgroup) and a Python integer sieve.
@@ -77,11 +79,11 @@ $$B(n) = 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$$
 
 2. **No integer points for $n=1\ldots30$:** The brute-force sieve found zero perfect-square values of the RHS in the searched range.
 
-3. **Forbidden point check:** $X_{\text{forb}} = -3888n^2$ does not satisfy the curve equation for $n=1,\ldots,10$; this is consistent with the constraint $X \neq -3888n^2$ being vacuous for these $n$.
+3. **Forbidden point check:** At $X = 0$, $v^2 = B(n)$ is not a perfect square for $n=1,\ldots,10$; so the constraint $X \neq 0$ is vacuous for these $n$.
 
 4. **Conductor growth:** $\Delta(E_n) \sim n^{12}$ (inferred from the degree of $A(n)$ and $B(n)$), so the curve gets harder to attack algebraically as $n$ grows.
 
 ### Conclusion (so far)
 
-No rational points with $X \neq -3888n^2$ have been found for $n = 1,\ldots,30$.  For $n=1$ and $n=2$ this is a proven statement (rank 0, trivial torsion).  Extending the rank computation and the sieve to larger $n$ and larger $X$-bounds is ongoing.
+No rational points with $X \neq 0$ have been found for $n = 1,\ldots,30$.  For $n=1$ and $n=2$ this is a proven statement (rank 0, trivial torsion).  Extending the rank computation and the sieve to larger $n$ and larger $X$-bounds is ongoing.
 
