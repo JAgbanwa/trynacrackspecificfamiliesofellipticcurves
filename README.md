@@ -71,7 +71,7 @@ At $X = 0$ the curve equation reduces to $v^2 = B(n) = 3 \cdot (39182082048n^5 -
 | 10 | — | — | none | 9 990 |
 | 11–30 | — | — | none | decreasing (see note) |
 
-*Note:* For $n \geq 3$ the integer sieve used bound $\lfloor 10^7/(n^3+1) \rfloor$ to keep runtime practical.  MW rank for $n \geq 3$ is still being determined (full 2-descent is slow because the conductor of $E_n$ grows as $O(n^{12})$).
+*Note:* For $n \geq 3$ the integer sieve used bound $\lfloor 10^7/(n^3+1) \rfloor$ to keep runtime practical.  MW rank for $n \geq 3$ is still being determined (full 2-descent is slow because the conductor of $E_n$ grows as $O(n^{12})$.
 
 ### Key observations
 
