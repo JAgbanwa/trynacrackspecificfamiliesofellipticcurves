@@ -51,8 +51,6 @@ $$A(n) = -45349632n^4 + 419904n^3 = 419904n^3(1 - 108n)$$
 
 $$B(n) = 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$$
 
-The forbidden value $X = -3888n^2$ does **not** lie on $E_n$ for any $n \geq 1$ tested — the right-hand side evaluated there is never a perfect square (verified for $n = 1,\ldots,10$ by direct computation).
-
 ### Computational results (18 March 2026)
 
 **Tools used:** SageMath (`EllipticCurve.rank(proof=False)`, torsion subgroup) and a Python integer sieve.
