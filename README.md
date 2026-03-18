@@ -2,13 +2,16 @@
 
 ## Main equation
 
+$v^2  = x^3 + m^2 \cdot x^2 + \dfrac{1}{3}  m^3 \cdot x + \dfrac{m^4 - 19m}{36} \quad \text{where  $m \neq 0$}$
+
+The Weierstrass equation of the above equation is:
 
 $v^2 = X^3 + \left(-\frac{1}{3} \cdot m^4 + \frac{1}{3} \cdot m^3\right) \cdot X + \frac{72m^6 - 108m^5 + 27m^4 - 513m}{972}$
 
 
 where
 
-$X = x + \frac{m^2}{3}$
+$X = x + \frac{m^2}{3}$ and $u = \frac{72m^6 - 108m^5 + 27m^4 - 513m}{972}$
 
 ---
 
@@ -22,3 +25,6 @@ $X = x + \frac{m^2}{3}$
 | 4 | $27 \cdot (4n+1)$ | $3 \cdot \left(39182082048n^6 + 58228927488n^5 + 36054217152n^4 + 11905538112n^3 + 2211266952n^2 + 219032405n + 9039413\right)$ |
 | 5 | $9 \cdot (12n+7)$ | $117546246144n^6 + 409779274752n^5 + 595217699136n^4 + 461101201344n^3 + 200925481176n^2 + 46694776911n + 4521537356$ |
 | 6 | $9 \cdot (12n+11)$ | $117546246144n^6 + 644871767040n^5 + 1474093567296n^4 + 1797106398912n^3 + 1232376407064n^2 + 450723291423n + 68685282985$ |
+
+The goal is to find at least an integral point $(n,X,v)$ for any of the six resulting Weierstrass equations if $m(n)$ and $u(n)$ were substituted into 
+$v^2 = X^3 + \left(-\frac{1}{3} \cdot m^4 + \frac{1}{3} \cdot m^3\right) \cdot X + \frac{72m^6 - 108m^5 + 27m^4 - 513m}{972}$.
