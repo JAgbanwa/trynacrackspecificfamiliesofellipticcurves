@@ -33,7 +33,7 @@ The first case to be dealt with is:
 
 $$v^2 = X^3 + \left(-45349632 \cdot n^4 + 419904 \cdot n^3\right) \cdot X + 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$$
 
-with the constraint $X \neq -3888n^2$.
+with the constraint $X \neq 0$.
 
 ---
 
