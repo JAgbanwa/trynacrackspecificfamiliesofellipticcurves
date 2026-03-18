@@ -2,7 +2,7 @@
 
 ## Main equation
 
-$v^2  = x^3 + m^2 \cdot x^2 + \dfrac{1}{3}  m^3 \cdot x + \dfrac{m^4 - 19m}{36} \quad \text{where  $m \neq 0$}$
+$v^2  = x^3 + m^2 \cdot x^2 + \dfrac{1}{3}  m^3 \cdot x + \dfrac{m^4 - 19m}{36}$
 
 The Weierstrass equation of the above equation is:
 
