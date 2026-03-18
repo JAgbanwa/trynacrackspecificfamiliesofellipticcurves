@@ -2,16 +2,13 @@
 
 ## Main equation
 
-$$
-v^2 = X^3 + \left(-\frac{1}{3} m^4 + \frac{1}{3} m^3\right) X
-+ \frac{2}{27} m^6 - \frac{1}{9} m^5 + \frac{1}{36} m^4 - \frac{19}{36} m
-$$
+
+$v^2 = X^3 + \left(-\frac{1}{3} m^4 + \frac{1}{3} m^3\right) X + \frac{2}{27} m^6 - \frac{1}{9} m^5 + \frac{1}{36} m^4 - \frac{19}{36} \cdot m$
+
 
 where
 
-$$
-X = x - \frac{m^2}{3}
-$$
+$X = x - \frac{m^2}{3}$
 
 ---
 
