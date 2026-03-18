@@ -51,7 +51,7 @@ $$A(n) = -45349632n^4 + 419904n^3 = 419904n^3(1 - 108n)$$
 
 $$B(n) = 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$$
 
-At $X = 0$ the curve equation reduces to $v^2 = B(n) = 3n(39182082048n^5 - 544195584n^4 + 1259712n^3 - 19)$, which is excluded by the constraint $X \neq 0$.  For $n = 1,\ldots,10$ this value is not a perfect square (verified by direct computation), so the constraint is again vacuous for these $n$.
+At $X = 0$ the curve equation reduces to $v^2 = B(n) = 3 \cdot (39182082048n^5 - 544195584n^4 + 1259712n^3 - 19)$, which is excluded by the constraint $X \neq 0$.  For $n = 1,\ldots,10$ this value is not a perfect square (verified by direct computation), so the constraint is again vacuous for these $n$.
 
 ### Computational results (18 March 2026)
 
