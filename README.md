@@ -3,7 +3,7 @@
 ## Main equation
 
 
-$v^2 = X^3 + \left(-\frac{1}{3} \cdot m^4 + \frac{1}{3} \cdot m^5\right) \cdot X + \dfrac{8m^6 - 12m^7 + 3m^4 - 57m}{108}$
+$v^2 = X^3 + \left(-\frac{1}{3} \cdot m^4 + \frac{1}{3} \cdot m^3\right) \cdot X + \dfrac{8m^6 - 12m^7 + 3m^4 - 57m}{108}$
 
 
 where
