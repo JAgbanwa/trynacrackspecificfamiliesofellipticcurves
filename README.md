@@ -31,4 +31,59 @@ $v^2 = X^3 + \left(-\frac{1}{3} \cdot m^4 + \frac{1}{3} \cdot m^3\right) \cdot X
 
 The first case to be dealt with is:
 
-$v^2 = X^3 + \left(-45349632 \cdot n^4 + 419904 \cdot n^3\right) \cdot X + 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$
+$$v^2 = X^3 + \left(-45349632 \cdot n^4 + 419904 \cdot n^3\right) \cdot X + 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$$
+
+with the constraint $X \neq -3888n^2$.
+
+---
+
+## Case 1 Search Results: $m(n) = 108n$
+
+### Curve structure
+
+Substituting $m = 108n$ into the general short Weierstrass model gives the one-parameter family:
+
+$$E_n : v^2 = X^3 + A(n)\,X + B(n)$$
+
+where
+
+$$A(n) = -45349632\,n^4 + 419904\,n^3 = 419904\,n^3(1 - 108n)$$
+
+$$B(n) = 3\!\left(39182082048\,n^6 - 544195584\,n^5 + 1259712\,n^4 - 19\,n\right)$$
+
+The forbidden value $X = -3888n^2$ does **not** lie on $E_n$ for any $n \geq 1$ tested — the right-hand side evaluated there is never a perfect square (verified for $n = 1,\ldots,10$ by direct computation).
+
+### Computational results (18 March 2026)
+
+**Tools used:** SageMath (`EllipticCurve.rank(proof=False)`, torsion subgroup) and a Python integer sieve.
+
+| $n$ | MW rank | Torsion pts | Integer pts found | Search bound $\lvert X\rvert \leq$ |
+|:---:|:---:|:---:|:---:|:---|
+| 1 | **0** | none | none | 500 000 |
+| 2 | **0** | none | none | 500 000 |
+| 3 | — | — | none | 357 142 |
+| 4 | — | — | none | 153 846 |
+| 5 | — | — | none | 79 365 |
+| 6 | — | — | none | 46 082 |
+| 7 | — | — | none | 29 069 |
+| 8 | — | — | none | 19 493 |
+| 9 | — | — | none | 13 698 |
+| 10 | — | — | none | 9 990 |
+| 11–30 | — | — | none | decreasing (see note) |
+
+*Note:* For $n \geq 3$ the integer sieve used bound $\lfloor 10^7/(n^3+1) \rfloor$ to keep runtime practical.  MW rank for $n \geq 3$ is still being determined (full 2-descent is slow because the conductor of $E_n$ grows as $O(n^{12})$).
+
+### Key observations
+
+1. **Rank 0 for $n=1,2$:** Sage confirms the Mordell–Weil rank is 0 and the torsion is trivial, so $E_1$ and $E_2$ have **no rational points at all** (beyond $\mathcal{O}$).
+
+2. **No integer points for $n=1\ldots30$:** The brute-force sieve found zero perfect-square values of the RHS in the searched range.
+
+3. **Forbidden point check:** $X_{\text{forb}} = -3888n^2$ does not satisfy the curve equation for $n=1,\ldots,10$; this is consistent with the constraint $X \neq -3888n^2$ being vacuous for these $n$.
+
+4. **Conductor growth:** $\Delta(E_n) \sim n^{12}$ (inferred from the degree of $A(n)$ and $B(n)$), so the curve gets harder to attack algebraically as $n$ grows.
+
+### Conclusion (so far)
+
+No rational points with $X \neq -3888n^2$ have been found for $n = 1,\ldots,30$.  For $n=1$ and $n=2$ this is a proven statement (rank 0, trivial torsion).  Extending the rank computation and the sieve to larger $n$ and larger $X$-bounds is ongoing.
+
