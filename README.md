@@ -43,7 +43,7 @@ with the constraint $X \neq 0$.
 
 Substituting $m = 108n$ into the general short Weierstrass model gives the one-parameter family:
 
-$$E_n : v^2 = X^3 + A(n)\,X + B(n)$$
+$$E_n : v^2 = X^3 + A(n) \cdot X + B(n)$$
 
 where
 
