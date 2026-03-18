@@ -28,3 +28,7 @@ $X = x + \frac{m^2}{3}$ and $u = \frac{72m^6 - 108m^5 + 27m^4 - 513m}{972}$
 
 The goal is to find at least an integral point $(n,X,v)$ for any of the six resulting Weierstrass equations if $m(n)$ and $u(n)$ were substituted into 
 $v^2 = X^3 + \left(-\frac{1}{3} \cdot m^4 + \frac{1}{3} \cdot m^3\right) \cdot X + \frac{72m^6 - 108m^5 + 27m^4 - 513m}{972}$.
+
+The first case to be dealt with is:
+
+$v^2 = X^3 + \left(-45349632 \cdot n^4 + 419904 \cdot n^3\right) \cdot X + 3\cdot\left(39182082048n^6 - 544195584n^5 + 1259712n^4 - 19n\right)$
